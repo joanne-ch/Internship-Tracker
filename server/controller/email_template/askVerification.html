@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .parentDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  	margin: 4% 4% 4% 4%
+  }
+  
+  .verifyButton{
+  	width: 30%;
+    height: 6vh;
+    border-radius: 10%;
+    margin: auto;
+    background-color: #000000;
+    color: white;
+  }
+  
+  h1{
+  	text-align: center;
+  }
+  
+  p{
+  	margin-top: 8%;
+    margin-bottom :6%;
+  }
+  
+  .footer{
+  	color: #D3D3D3;
+  }
+  
+  hr{
+  	color: #000000;
+  }
+  
+
+</style>
+<body>
+<!--TBD add logo-->
+
+<div class="parentDiv"> 
+  <h1>Verify your email to sign up for InternshipTracker!</h1>
+
+  <p> To complete the signup process, please click on the button bellow. Please note that by completing the sign up you are agreeing to our <a href="">Terms of Service</a> and <a href=""> Privacy Policy</a></p>
+
+  <button class="verifyButton">VERIFY</button>
+
+  <p> Or copy and paste this URL into a new tab of your browser:</p>
+
+  <!-- TBD INSERT URL HERE -->
+  
+  <a href="http://localhost:3000/api/verify/{{token}}"> authentication URL</a>
+  
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  
+  <p class="footer"> If you didn't attempt to sign up but receive this email, please ignore this email. </p>
+
+</div>
+
+</body>
+
+</html>
